@@ -7,7 +7,7 @@ Bedrock Knowledge Bases (BKB) with Federal Law
 #### Built with [Docusaurus](https://docusaurus.io/)
 
 _Landing Page_
-<img src="static/img/readme/landing.png" alt="" />
+![tn](static/img/thumbnailgit.png)
 
 _Preview_
 <img src="static/img/readme/preview.gif" alt="" />
