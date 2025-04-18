@@ -1,0 +1,8 @@
+{
+  "label": "법률 데이터 실습하기",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "description": "Bedrock Knowledge Bases의 Structured Retrieval을 활용하여 자연어 쿼리를 SQL 쿼리로 변환하여 결과를 반환해줍니다."
+  }
+}

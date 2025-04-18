@@ -1,0 +1,8 @@
+{
+  "label": "Bedrock 알아보기",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Bedrock Knowledge Bases에 대한 이론과 관련된 내용을 소개드립니다."
+  }
+}
