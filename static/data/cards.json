@@ -1,0 +1,23 @@
+[
+  {
+    "type": "orange",
+    "image": "lambda.png",
+    "service": "Lambda",
+    "description": "서버리스 컴퓨팅",
+    "mdlink" : "/docs/lambda/base" 
+  },
+  {
+    "type": "green",
+    "image": "bedrock.png",
+    "service": "Bedrock",
+    "description": "생성형 AI",
+    "mdlink" : "/docs/bedrock/prompt_engineering"
+  },
+  {
+    "type": "purple",
+    "image": "hackathon.png",
+    "service": "Hackathon",
+    "description": "AI 챗봇",
+    "mdlink" : "/docs/hackathon/hackathon"
+  }
+]
