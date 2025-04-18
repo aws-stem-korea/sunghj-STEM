@@ -82,6 +82,11 @@ const config = {
           {to: '/blog', label: 'Contributor', position: 'left'},
           {
             href: 'https://aws.amazon.com/bedrock/?gclid=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE&trk=24a8f13a-f5db-4127-bcb7-8b2876aa4265&sc_channel=ps&ef_id=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE:G:s&s_kwcid=AL!4422!3!692062155749!e!!g!!aws%20bedrock!21058131112!157173586057',
+            label: 'Accounts',
+            position: 'left',
+          },
+          {
+            href: 'https://aws.amazon.com/bedrock/?gclid=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE&trk=24a8f13a-f5db-4127-bcb7-8b2876aa4265&sc_channel=ps&ef_id=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE:G:s&s_kwcid=AL!4422!3!692062155749!e!!g!!aws%20bedrock!21058131112!157173586057',
             label: 'AWS Bedrock',
             position: 'right',
           },
