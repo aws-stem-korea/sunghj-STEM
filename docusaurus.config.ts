@@ -75,15 +75,9 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'theorySidebar',
+            sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Theory',
-          },
-          {
-            type: 'docSidebar',
-            sidebarId: 'lawSidebar',
-            position: 'left',
-            label: 'Law',
+            label: 'Tutorial',
           },
           {to: '/blog', label: 'Contributor', position: 'left'},
           {
