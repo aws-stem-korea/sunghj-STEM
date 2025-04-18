@@ -48,6 +48,7 @@ export default function CardLayout({ title, description }) {
             service={card.service}
             description={card.description}
             mdlink={card.mdlink}
+            altlink={card.altlink}
             clickHandler={clickHandler}
           />
         )

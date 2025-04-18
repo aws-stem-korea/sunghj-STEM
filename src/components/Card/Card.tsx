@@ -2,6 +2,7 @@ import { useAnimate } from "motion/react";
 import { MouseMoveHandler, MouseOutHandler } from "@site/src/utils/cardAnimation";
 import cardStyles from './style.module.css';
 import Link from '@docusaurus/Link';
+import { link } from "motion/react-client";
 
 type CardProps = {
   clickHandler : (target: HTMLElement, x: number, y: number) => {},
@@ -11,11 +12,12 @@ type CardProps = {
   service: string,
   description: string,
   mdlink: string
+  altlink: string
 }
 
 export default function Card({
   clickHandler,
-  id, img, description, type, service, mdlink
+  id, img, description, type, service, mdlink, altlink
 } : CardProps) {
   const back = "https://uploads.concordia.net/2023/02/16161824/1200px-Amazon_Web_Services_Logo.svg-1.png";
   const back_img = back;
@@ -43,7 +45,18 @@ export default function Card({
         className={`${cardStyles.card} ${cardStyles[type]}`}
       >
         <div className={cardStyles.card__translater}>
-          <Link href={mdlink}>
+          <Link 
+            href={mdlink?.trim() 
+              ? mdlink  // If mdlink exists, use it as is (internal link)
+              : altlink.startsWith('http') 
+                ? altlink  // If altlink already has http/https, use as is
+                : `https://${altlink}`  // Otherwise add https:// to altlink
+            }
+            {...(!mdlink?.trim() && {
+              target: "_blank",
+              rel: "noopener"
+            })}
+          >
           <button className={cardStyles.card__rotator}>
             <img
               src={back_img}
