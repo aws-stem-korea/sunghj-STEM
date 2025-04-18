@@ -1,23 +1,24 @@
 [
   {
-    "type": "orange",
-    "image": "ec2.png",
-    "service": "Lambda",
-    "description": "서버리스 컴퓨팅",
-    "mdlink" : "/docs/bkb-theory/1_theory_BKB.md" 
-  },
-  {
     "type": "green",
     "image": "bedrock.png",
     "service": "Bedrock",
     "description": "생성형 AI",
-    "mdlink" : "/docs/bedrock/prompt_engineering"
+    "mdlink" : "/docs/bkb-theory/theory_BKB"
   },
   {
     "type": "purple",
-    "image": "hackathon.png",
-    "service": "Hackathon",
-    "description": "AI 챗봇",
-    "mdlink" : "/docs/hackathon/hackathon"
+    "image": "law.png",
+    "service": "Law",
+    "description": "형법 데이터 실습",
+    "mdlink" : "/docs/law-practice/intro"
+  },
+  {
+    "type": "green",
+    "image": "sheet.png",
+    "service": "ID Sheet",
+    "description": "워크샵 참가 아이디 시트",
+    "mdlink" : "",
+    "altlink" : "google.com" 
   }
 ]
