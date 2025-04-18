@@ -1,10 +1,10 @@
 [
   {
     "type": "orange",
-    "image": "lambda.png",
+    "image": "ec2.png",
     "service": "Lambda",
     "description": "서버리스 컴퓨팅",
-    "mdlink" : "/docs/lambda/base" 
+    "mdlink" : "/docs/bkb-theory/1_theory_BKB.md" 
   },
   {
     "type": "green",

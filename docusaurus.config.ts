@@ -6,8 +6,8 @@ const darkCodeTheme = require('prism-react-renderer').themes.dracula;;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AWS High School Hackathon',
-  tagline: '고등학생 개발자 여러분과 함께 AWS의 서버리스 및 생성형AI 서비스들을 다뤄보는 실습을 진행합니다.',
+  title: '2025 AWS High School STEM',
+  tagline: '고등학생 여러분과 함께 AWS의 생성형 AI 서비스인 Amazon Bedrock을 다뤄보는 실습을 진행합니다.',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -45,11 +45,14 @@ const config = {
           //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          // editUrl:
-          //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          showReadingTime: false,
+          blogTitle: 'Contributors',
+          blogDescription: 'Meet our contributors',
+          blogSidebarTitle: 'All Contributors',
+          feedOptions: {
+            type: ['rss', 'atom'],
+            xslt: true,
+          },
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -72,68 +75,56 @@ const config = {
         items: [
           {
             type: 'docSidebar',
-            sidebarId: 'lambdaSidebar',
+            sidebarId: 'theorySidebar',
             position: 'left',
-            label: 'Lambda',
+            label: 'Theory',
           },
           {
             type: 'docSidebar',
-            sidebarId: 'bedrockSidebar',
+            sidebarId: 'lawSidebar',
             position: 'left',
-            label: 'Bedrock',
+            label: 'Law',
           },
+          {to: '/blog', label: 'Contributor', position: 'left'},
           {
-            type: 'docSidebar',
-            sidebarId: 'hackathonSidebar',
-            position: 'left',
-            label: 'Hackathon',
+            href: 'https://aws.amazon.com/bedrock/?gclid=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE&trk=24a8f13a-f5db-4127-bcb7-8b2876aa4265&sc_channel=ps&ef_id=CjwKCAiA2cu9BhBhEiwAft6IxBoSpIdCU00g-wkL5Pj8Ax-MY8eHXSqgTVc7IhRk3suLDltg4ix3qxoCLGYQAvD_BwE:G:s&s_kwcid=AL!4422!3!692062155749!e!!g!!aws%20bedrock!21058131112!157173586057',
+            label: 'AWS Bedrock',
+            position: 'right',
           },
         ],
       },
       footer: {
         style: 'dark',
-        // links: [
-        //   {
-        //     title: 'Docs',
-        //     items: [
-        //       {
-        //         label: 'Tutorial',
-        //         to: '/docs/intro',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'Community',
-        //     items: [
-        //       {
-        //         label: 'Stack Overflow',
-        //         href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-        //       },
-        //       {
-        //         label: 'Discord',
-        //         href: 'https://discordapp.com/invite/docusaurus',
-        //       },
-        //       {
-        //         label: 'Twitter',
-        //         href: 'https://twitter.com/docusaurus',
-        //       },
-        //     ],
-        //   },
-        //   {
-        //     title: 'More',
-        //     items: [
-        //       {
-        //         label: 'Blog',
-        //         to: '/blog',
-        //       },
-        //       {
-        //         label: 'GitHub',
-        //         href: 'https://github.com/facebook/docusaurus',
-        //       },
-        //     ],
-        //   },
-        // ],
-        copyright: `COPYRIGHT ${new Date().getFullYear()} | AWS KOREA, DOKEUN KIM, AYEON KIM, HYUNSU KO, SEONGJU LEE | ALL RIGHTS RESERVED `,
+        links: [
+          {
+            title: 'Community',
+            items: [
+              {
+                label: 'AWS',
+                href: 'https://aws.amazon.com/ko/free/?gclid=Cj0KCQiA_NC9BhCkARIsABSnSTacJ6XsM3kkpAjLYReSWlmmrJ1xXHTFM31kWLcPmER57TUrygKkfEAaAnaHEALw_wcB&trk=fa2d6ba3-df80-4d24-a453-bf30ad163af9&sc_channel=ps&ef_id=Cj0KCQiA_NC9BhCkARIsABSnSTacJ6XsM3kkpAjLYReSWlmmrJ1xXHTFM31kWLcPmER57TUrygKkfEAaAnaHEALw_wcB:G:s&s_kwcid=AL!4422!3!563761819834!e!!g!!aws!15286221779!129400439466&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all',
+              },
+              
+              {
+                label: 'AWS re:Post',
+                href: 'https://repost.aws/ko',
+              },
+            ],
+          },
+          {
+            title: 'More',
+            items: [
+              {
+                label: 'Contributor',
+                to: '/blog',
+              },
+              {
+                label: 'AWS Bedrock',
+                href: 'https://aws.amazon.com/ko/bedrock/?nc1=h_ls',
+              },
+            ],
+          },
+        ],
+        copyright: `COPYRIGHT ${new Date().getFullYear()} AWS KOREA | ALL RIGHTS RESERVED `,
       },
       prism: {
         theme: lightCodeTheme,
