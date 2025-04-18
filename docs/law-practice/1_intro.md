@@ -12,6 +12,7 @@
 
 Bedrock Knowledge Bases with Criminal Law Data 실습에서는 형법 및 정당방위 판례 데이터를 S3 버킷에 업로드한 뒤, 이를 OpenSearch를 활용하여 벡터DB에 적재합니다. 이후, Bedrock Knowledge Bases를 활용하여 해당 데이터를 참고하여 법률 질의응답을 진행합니다. 최종적으로, 판례를 토대로 법의 모호한 부분들을 실제 사례를 토대로 설명해줍니다.
 
+![58](img/58.png)
 
 ---
 
